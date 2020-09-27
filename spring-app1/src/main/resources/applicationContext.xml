@@ -11,17 +11,24 @@
     <bean id="musicBean1"
           class="org.de.RockMusic">
     </bean>
-    <bean id="musicBean2"
-          class="org.de.ClassicalMusik">
+    <bean id="classicalMusic"
+          class="org.de.ClassicalMusic"
+          init-method="doMyInit"
+          destroy-method="doMyDestroy"
+          scope="prototype"
+    >
     </bean>
-    <bean id="musicPlayer"
-          class="org.de.MusicPlayer">
-        <property name="musicList">
-            <list>
-                <ref bean="musicBean1"/>
-                <ref bean="musicBean2"/>
-            </list>
-        </property>
-    </bean>
+    <!--    <bean id="musicPlayer"-->
+    <!--          class="org.de.MusicPlayer"-->
+    <!--    scope="prototype">-->
+    <!--        <property name="musicList">-->
+    <!--            <list>-->
+    <!--                <ref bean="musicBean1"/>-->
+    <!--                <ref bean="musicBean2"/>-->
+    <!--            </list>-->
+    <!--        </property>-->
+    <!--        <property name="name" value="Some name"/>-->
+    <!--        <property name="volume" value="50"/>-->
+    <!--    </bean>-->
 
 </beans>

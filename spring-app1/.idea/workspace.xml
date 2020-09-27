@@ -22,7 +22,18 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7894f0c1-ec62-46eb-8ba9-a3bedab684ca" name="Default Changelist" comment="add properties with ListBeans" />
+    <list default="true" id="7894f0c1-ec62-46eb-8ba9-a3bedab684ca" name="Default Changelist" comment="add properties with ListBeans">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/de/ClassicalMusic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/de/ClassicalMusik.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/de/MusicPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/de/MusicPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/de/TestSpring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/de/TestSpring.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/de/ClassicalMusik.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/de/MusicPlayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/de/MusicPlayer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/de/TestSpring.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/de/TestSpring.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -83,15 +94,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -119,6 +128,7 @@
       <workItem from="1601118372423" duration="10000" />
       <workItem from="1601118448262" duration="6445000" />
       <workItem from="1601205985596" duration="3528000" />
+      <workItem from="1601243470447" duration="2753000" />
     </task>
     <task id="LOCAL-00001" summary="TestBean">
       <created>1601118576360</created>
@@ -195,10 +205,10 @@
       <screen x="0" y="0" width="1285" height="903" />
     </state>
     <state x="234" y="111" key="#Project_Structure/0.0.1285.903@0.0.1285.903" timestamp="1600815490104" />
-    <state x="447" y="173" key="#com.intellij.ide.util.MemberChooser" timestamp="1601207530072">
+    <state x="447" y="173" key="#com.intellij.ide.util.MemberChooser" timestamp="1601243712122">
       <screen x="0" y="0" width="1285" height="903" />
     </state>
-    <state x="447" y="173" key="#com.intellij.ide.util.MemberChooser/0.0.1285.903@0.0.1285.903" timestamp="1601207530072" />
+    <state x="447" y="173" key="#com.intellij.ide.util.MemberChooser/0.0.1285.903@0.0.1285.903" timestamp="1601243712122" />
     <state x="447" y="176" key="#com.intellij.ide.util.MemberChooser/0.0.1285.919@0.0.1285.919" timestamp="1600776484030" />
     <state x="297" y="47" key="CommitChangelistDialog2" timestamp="1600812799405">
       <screen x="0" y="0" width="1285" height="903" />
@@ -208,25 +218,29 @@
       <screen x="0" y="0" width="1285" height="903" />
     </state>
     <state x="422" y="207" key="FileChooserDialogImpl/0.0.1285.903@0.0.1285.903" timestamp="1601118045924" />
-    <state width="1242" height="221" key="GridCell.Tab.0.bottom" timestamp="1601242867579">
-      <screen x="0" y="0" width="1285" height="903" />
+    <state width="1242" height="221" key="GridCell.Tab.0.bottom" timestamp="1601246418439">
+      <screen x="0" y="0" width="1285" height="902" />
     </state>
-    <state width="1242" height="221" key="GridCell.Tab.0.bottom/0.0.1285.903@0.0.1285.903" timestamp="1601242867579" />
+    <state width="1242" height="221" key="GridCell.Tab.0.bottom/0.0.1285.902@0.0.1285.902" timestamp="1601246418439" />
+    <state width="1242" height="221" key="GridCell.Tab.0.bottom/0.0.1285.903@0.0.1285.903" timestamp="1601244722649" />
     <state width="1242" height="242" key="GridCell.Tab.0.bottom/0.0.1285.919@0.0.1285.919" timestamp="1600789781936" />
-    <state width="1242" height="221" key="GridCell.Tab.0.center" timestamp="1601242867565">
-      <screen x="0" y="0" width="1285" height="903" />
+    <state width="1242" height="221" key="GridCell.Tab.0.center" timestamp="1601246418439">
+      <screen x="0" y="0" width="1285" height="902" />
     </state>
-    <state width="1242" height="221" key="GridCell.Tab.0.center/0.0.1285.903@0.0.1285.903" timestamp="1601242867565" />
+    <state width="1242" height="221" key="GridCell.Tab.0.center/0.0.1285.902@0.0.1285.902" timestamp="1601246418439" />
+    <state width="1242" height="221" key="GridCell.Tab.0.center/0.0.1285.903@0.0.1285.903" timestamp="1601244722649" />
     <state width="1242" height="242" key="GridCell.Tab.0.center/0.0.1285.919@0.0.1285.919" timestamp="1600789781921" />
-    <state width="1242" height="221" key="GridCell.Tab.0.left" timestamp="1601242867565">
-      <screen x="0" y="0" width="1285" height="903" />
+    <state width="1242" height="221" key="GridCell.Tab.0.left" timestamp="1601246418439">
+      <screen x="0" y="0" width="1285" height="902" />
     </state>
-    <state width="1242" height="221" key="GridCell.Tab.0.left/0.0.1285.903@0.0.1285.903" timestamp="1601242867565" />
+    <state width="1242" height="221" key="GridCell.Tab.0.left/0.0.1285.902@0.0.1285.902" timestamp="1601246418439" />
+    <state width="1242" height="221" key="GridCell.Tab.0.left/0.0.1285.903@0.0.1285.903" timestamp="1601244722649" />
     <state width="1242" height="242" key="GridCell.Tab.0.left/0.0.1285.919@0.0.1285.919" timestamp="1600789781921" />
-    <state width="1242" height="221" key="GridCell.Tab.0.right" timestamp="1601242867579">
-      <screen x="0" y="0" width="1285" height="903" />
+    <state width="1242" height="221" key="GridCell.Tab.0.right" timestamp="1601246418439">
+      <screen x="0" y="0" width="1285" height="902" />
     </state>
-    <state width="1242" height="221" key="GridCell.Tab.0.right/0.0.1285.903@0.0.1285.903" timestamp="1601242867579" />
+    <state width="1242" height="221" key="GridCell.Tab.0.right/0.0.1285.902@0.0.1285.902" timestamp="1601246418439" />
+    <state width="1242" height="221" key="GridCell.Tab.0.right/0.0.1285.903@0.0.1285.903" timestamp="1601244722649" />
     <state width="1242" height="242" key="GridCell.Tab.0.right/0.0.1285.919@0.0.1285.919" timestamp="1600789781936" />
     <state x="143" y="52" key="SettingsEditor" timestamp="1601118176716">
       <screen x="0" y="0" width="1285" height="903" />
