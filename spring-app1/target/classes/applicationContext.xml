@@ -15,7 +15,7 @@
           class="org.de.ClassicalMusic"
           init-method="doMyInit"
           destroy-method="doMyDestroy"
-          scope="prototype"
+          factory-method="getClassicalMusic"
     >
     </bean>
     <!--    <bean id="musicPlayer"-->
