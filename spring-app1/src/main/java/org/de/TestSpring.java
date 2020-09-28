@@ -2,11 +2,15 @@ package org.de;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import static org.de.MusicGenre.*;
+
 public class TestSpring {
     public static void main(String[] args) {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(
                 "applicationContext.xml");
-//        MusicPlayer musicPlayer = context.getBean("musicPlayer", MusicPlayer.class);
+        MusicPlayer musicPlayer = context.getBean("musicPlayer", MusicPlayer.class);
+        System.out.println(musicPlayer.playMusic(CLASSICAL));
+        System.out.println(musicPlayer.playMusic(ROCK));
 //        Music music = context.getBean("musicBean", Music.class);
 //        MusicPlayer musicPlayer = new MusicPlayer(music);
 //        MusicPlayer firstMusicPlayer = context.getBean("musicPlayer", MusicPlayer.class);
@@ -29,8 +33,8 @@ public class TestSpring {
 //        firstMusicPlayer.setVolume(20);
 //        System.out.println(firstMusicPlayer.getVolume());
 //        System.out.println(secondMusicPlayer.getVolume());
-        Computer computer = context.getBean("computer", Computer.class);
-        System.out.println(computer);
+//        Computer computer = context.getBean("computer", Computer.class);
+//        System.out.println(computer);
         context.close();
     }
 }

@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
+import java.util.Random;
 
 @Component
 public class MusicPlayer {
@@ -60,8 +61,11 @@ public class MusicPlayer {
 //    public void setMusicList(List<Music> musicList) {
 //        this.musicList = musicList;
 //    }
-
-    public String playMusic() {
-        return "Playing: " + music1.getSong() + ", " + music2.getSong();
+Random rnd = new Random();
+    public String playMusic(Enum e) {
+        if (e==MusicGenre.CLASSICAL){
+            return "Playing: " + music1.getSong().get(rnd.nextInt(3));
+        }
+        return "Playing: " + music2.getSong().get(rnd.nextInt(3));
     }
 }

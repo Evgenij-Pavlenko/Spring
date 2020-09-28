@@ -22,9 +22,18 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7894f0c1-ec62-46eb-8ba9-a3bedab684ca" name="Default Changelist" comment="annotation @Autowired">
+    <list default="true" id="7894f0c1-ec62-46eb-8ba9-a3bedab684ca" name="Default Changelist" comment="annotation @Qualifier">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/de/MusicGenre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/de/ClassicalMusic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/de/ClassicalMusic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/de/Computer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/de/Computer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/de/Music.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/de/Music.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/de/MusicPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/de/MusicPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/de/RockMusic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/de/RockMusic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/de/TestSpring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/de/TestSpring.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/de/Music.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/de/Music.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/de/MusicPlayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/de/MusicPlayer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/de/RockMusic.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/de/RockMusic.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +45,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -123,7 +133,7 @@
       <workItem from="1601118448262" duration="6445000" />
       <workItem from="1601205985596" duration="3528000" />
       <workItem from="1601243470447" duration="3281000" />
-      <workItem from="1601309003538" duration="5715000" />
+      <workItem from="1601309003538" duration="7812000" />
     </task>
     <task id="LOCAL-00001" summary="TestBean">
       <created>1601118576360</created>
@@ -195,7 +205,21 @@
       <option name="project" value="LOCAL" />
       <updated>1601331374268</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="annotation @Autowired 2">
+      <created>1601331954479</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1601331954479</updated>
+    </task>
+    <task id="LOCAL-00012" summary="annotation @Qualifier">
+      <created>1601332089989</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1601332089989</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,7 +249,9 @@
     <MESSAGE value="add factory-method" />
     <MESSAGE value="annotation @Component" />
     <MESSAGE value="annotation @Autowired" />
-    <option name="LAST_COMMIT_MESSAGE" value="annotation @Autowired" />
+    <MESSAGE value="annotation @Autowired 2" />
+    <MESSAGE value="annotation @Qualifier" />
+    <option name="LAST_COMMIT_MESSAGE" value="annotation @Qualifier" />
   </component>
   <component name="WindowStateProjectService">
     <state x="234" y="111" key="#Project_Structure" timestamp="1600815490104">
@@ -246,28 +272,28 @@
       <screen x="0" y="0" width="1285" height="903" />
     </state>
     <state x="422" y="207" key="FileChooserDialogImpl/0.0.1285.903@0.0.1285.903" timestamp="1601118045924" />
-    <state width="1242" height="220" key="GridCell.Tab.0.bottom" timestamp="1601331602957">
+    <state width="1242" height="220" key="GridCell.Tab.0.bottom" timestamp="1601333562770">
       <screen x="0" y="0" width="1285" height="902" />
     </state>
-    <state width="1242" height="220" key="GridCell.Tab.0.bottom/0.0.1285.902@0.0.1285.902" timestamp="1601331602957" />
+    <state width="1242" height="220" key="GridCell.Tab.0.bottom/0.0.1285.902@0.0.1285.902" timestamp="1601333562770" />
     <state width="1242" height="221" key="GridCell.Tab.0.bottom/0.0.1285.903@0.0.1285.903" timestamp="1601244722649" />
     <state width="1242" height="242" key="GridCell.Tab.0.bottom/0.0.1285.919@0.0.1285.919" timestamp="1600789781936" />
-    <state width="1242" height="220" key="GridCell.Tab.0.center" timestamp="1601331602957">
+    <state width="1242" height="220" key="GridCell.Tab.0.center" timestamp="1601333562755">
       <screen x="0" y="0" width="1285" height="902" />
     </state>
-    <state width="1242" height="220" key="GridCell.Tab.0.center/0.0.1285.902@0.0.1285.902" timestamp="1601331602957" />
+    <state width="1242" height="220" key="GridCell.Tab.0.center/0.0.1285.902@0.0.1285.902" timestamp="1601333562755" />
     <state width="1242" height="221" key="GridCell.Tab.0.center/0.0.1285.903@0.0.1285.903" timestamp="1601244722649" />
     <state width="1242" height="242" key="GridCell.Tab.0.center/0.0.1285.919@0.0.1285.919" timestamp="1600789781921" />
-    <state width="1242" height="220" key="GridCell.Tab.0.left" timestamp="1601331602957">
+    <state width="1242" height="220" key="GridCell.Tab.0.left" timestamp="1601333562755">
       <screen x="0" y="0" width="1285" height="902" />
     </state>
-    <state width="1242" height="220" key="GridCell.Tab.0.left/0.0.1285.902@0.0.1285.902" timestamp="1601331602957" />
+    <state width="1242" height="220" key="GridCell.Tab.0.left/0.0.1285.902@0.0.1285.902" timestamp="1601333562755" />
     <state width="1242" height="221" key="GridCell.Tab.0.left/0.0.1285.903@0.0.1285.903" timestamp="1601244722649" />
     <state width="1242" height="242" key="GridCell.Tab.0.left/0.0.1285.919@0.0.1285.919" timestamp="1600789781921" />
-    <state width="1242" height="220" key="GridCell.Tab.0.right" timestamp="1601331602957">
+    <state width="1242" height="220" key="GridCell.Tab.0.right" timestamp="1601333562755">
       <screen x="0" y="0" width="1285" height="902" />
     </state>
-    <state width="1242" height="220" key="GridCell.Tab.0.right/0.0.1285.902@0.0.1285.902" timestamp="1601331602957" />
+    <state width="1242" height="220" key="GridCell.Tab.0.right/0.0.1285.902@0.0.1285.902" timestamp="1601333562755" />
     <state width="1242" height="221" key="GridCell.Tab.0.right/0.0.1285.903@0.0.1285.903" timestamp="1601244722649" />
     <state width="1242" height="242" key="GridCell.Tab.0.right/0.0.1285.919@0.0.1285.919" timestamp="1600789781936" />
     <state width="1242" height="292" key="GridCell.Tab.1.bottom" timestamp="1601314082010">
