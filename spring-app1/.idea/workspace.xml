@@ -22,10 +22,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7894f0c1-ec62-46eb-8ba9-a3bedab684ca" name="Default Changelist" comment="add init- and destroy-method">
+    <list default="true" id="7894f0c1-ec62-46eb-8ba9-a3bedab684ca" name="Default Changelist" comment="add factory-method">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/de/ClassicalMusic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/de/ClassicalMusic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/de/RockMusic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/de/RockMusic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/de/TestSpring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/de/TestSpring.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/applicationContext.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,17 +89,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.TestSpring" />
@@ -121,7 +112,8 @@
       <workItem from="1601118372423" duration="10000" />
       <workItem from="1601118448262" duration="6445000" />
       <workItem from="1601205985596" duration="3528000" />
-      <workItem from="1601243470447" duration="3064000" />
+      <workItem from="1601243470447" duration="3281000" />
+      <workItem from="1601309003538" duration="1832000" />
     </task>
     <task id="LOCAL-00001" summary="TestBean">
       <created>1601118576360</created>
@@ -172,7 +164,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601246994966</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add factory-method">
+      <created>1601247450067</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1601247450067</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,7 +198,8 @@
     <MESSAGE value="add properties" />
     <MESSAGE value="add properties with ListBeans" />
     <MESSAGE value="add init- and destroy-method" />
-    <option name="LAST_COMMIT_MESSAGE" value="add init- and destroy-method" />
+    <MESSAGE value="add factory-method" />
+    <option name="LAST_COMMIT_MESSAGE" value="add factory-method" />
   </component>
   <component name="WindowStateProjectService">
     <state x="234" y="111" key="#Project_Structure" timestamp="1600815490104">
@@ -219,28 +219,28 @@
       <screen x="0" y="0" width="1285" height="903" />
     </state>
     <state x="422" y="207" key="FileChooserDialogImpl/0.0.1285.903@0.0.1285.903" timestamp="1601118045924" />
-    <state width="1242" height="221" key="GridCell.Tab.0.bottom" timestamp="1601247252232">
+    <state width="1242" height="220" key="GridCell.Tab.0.bottom" timestamp="1601310374781">
       <screen x="0" y="0" width="1285" height="902" />
     </state>
-    <state width="1242" height="221" key="GridCell.Tab.0.bottom/0.0.1285.902@0.0.1285.902" timestamp="1601247252232" />
+    <state width="1242" height="220" key="GridCell.Tab.0.bottom/0.0.1285.902@0.0.1285.902" timestamp="1601310374781" />
     <state width="1242" height="221" key="GridCell.Tab.0.bottom/0.0.1285.903@0.0.1285.903" timestamp="1601244722649" />
     <state width="1242" height="242" key="GridCell.Tab.0.bottom/0.0.1285.919@0.0.1285.919" timestamp="1600789781936" />
-    <state width="1242" height="221" key="GridCell.Tab.0.center" timestamp="1601247252232">
+    <state width="1242" height="220" key="GridCell.Tab.0.center" timestamp="1601310374781">
       <screen x="0" y="0" width="1285" height="902" />
     </state>
-    <state width="1242" height="221" key="GridCell.Tab.0.center/0.0.1285.902@0.0.1285.902" timestamp="1601247252232" />
+    <state width="1242" height="220" key="GridCell.Tab.0.center/0.0.1285.902@0.0.1285.902" timestamp="1601310374781" />
     <state width="1242" height="221" key="GridCell.Tab.0.center/0.0.1285.903@0.0.1285.903" timestamp="1601244722649" />
     <state width="1242" height="242" key="GridCell.Tab.0.center/0.0.1285.919@0.0.1285.919" timestamp="1600789781921" />
-    <state width="1242" height="221" key="GridCell.Tab.0.left" timestamp="1601247252232">
+    <state width="1242" height="220" key="GridCell.Tab.0.left" timestamp="1601310374781">
       <screen x="0" y="0" width="1285" height="902" />
     </state>
-    <state width="1242" height="221" key="GridCell.Tab.0.left/0.0.1285.902@0.0.1285.902" timestamp="1601247252232" />
+    <state width="1242" height="220" key="GridCell.Tab.0.left/0.0.1285.902@0.0.1285.902" timestamp="1601310374781" />
     <state width="1242" height="221" key="GridCell.Tab.0.left/0.0.1285.903@0.0.1285.903" timestamp="1601244722649" />
     <state width="1242" height="242" key="GridCell.Tab.0.left/0.0.1285.919@0.0.1285.919" timestamp="1600789781921" />
-    <state width="1242" height="221" key="GridCell.Tab.0.right" timestamp="1601247252232">
+    <state width="1242" height="220" key="GridCell.Tab.0.right" timestamp="1601310374781">
       <screen x="0" y="0" width="1285" height="902" />
     </state>
-    <state width="1242" height="221" key="GridCell.Tab.0.right/0.0.1285.902@0.0.1285.902" timestamp="1601247252232" />
+    <state width="1242" height="220" key="GridCell.Tab.0.right/0.0.1285.902@0.0.1285.902" timestamp="1601310374781" />
     <state width="1242" height="221" key="GridCell.Tab.0.right/0.0.1285.903@0.0.1285.903" timestamp="1601244722649" />
     <state width="1242" height="242" key="GridCell.Tab.0.right/0.0.1285.919@0.0.1285.919" timestamp="1600789781936" />
     <state x="143" y="52" key="SettingsEditor" timestamp="1601118176716">
@@ -252,9 +252,10 @@
       <screen x="0" y="0" width="1285" height="903" />
     </state>
     <state x="92" y="92" width="1101" height="719" key="ShowDiffWithBranchDialog/0.0.1285.903@0.0.1285.903" timestamp="1600813197206" />
-    <state x="234" y="185" key="Vcs.Push.Dialog.v2" timestamp="1600812804764">
-      <screen x="0" y="0" width="1285" height="903" />
+    <state x="234" y="185" key="Vcs.Push.Dialog.v2" timestamp="1601247459067">
+      <screen x="0" y="0" width="1285" height="902" />
     </state>
+    <state x="234" y="185" key="Vcs.Push.Dialog.v2/0.0.1285.902@0.0.1285.902" timestamp="1601247459067" />
     <state x="234" y="185" key="Vcs.Push.Dialog.v2/0.0.1285.903@0.0.1285.903" timestamp="1600812804764" />
     <state x="451" y="369" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600812826236">
       <screen x="0" y="0" width="1285" height="903" />

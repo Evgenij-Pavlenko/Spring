@@ -1,5 +1,9 @@
 package org.de;
 
+import jdk.internal.instrumentation.InstrumentationTarget;
+import org.springframework.stereotype.Component;
+
+@Component
 public class ClassicalMusic implements Music {
     private ClassicalMusic(){}
 
@@ -9,7 +13,7 @@ public class ClassicalMusic implements Music {
 
     @Override
     public String getSong() {
-        return "Some Rhapsody";
+                return "Some Rhapsody";
     }
 
     public void doMyInit() {

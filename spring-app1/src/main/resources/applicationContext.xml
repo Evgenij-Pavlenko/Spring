@@ -7,17 +7,19 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <context:property-placeholder location="musicPlayer.properties"/>
-    <bean id="musicBean1"
-          class="org.de.RockMusic">
-    </bean>
-    <bean id="classicalMusic"
-          class="org.de.ClassicalMusic"
-          init-method="doMyInit"
-          destroy-method="doMyDestroy"
-          factory-method="getClassicalMusic"
-    >
-    </bean>
+    <context:component-scan base-package="org.de"/>
+<!--    first lesson - create beans in .xml-file-->
+<!--    <context:property-placeholder location="musicPlayer.properties"/>-->
+<!--    <bean id="musicBean1"-->
+<!--          class="org.de.RockMusic">-->
+<!--    </bean>-->
+<!--    <bean id="classicalMusic"-->
+<!--          class="org.de.ClassicalMusic"-->
+<!--          init-method="doMyInit"-->
+<!--          destroy-method="doMyDestroy"-->
+<!--          factory-method="getClassicalMusic"-->
+<!--    >-->
+<!--    </bean>-->
     <!--    <bean id="musicPlayer"-->
     <!--          class="org.de.MusicPlayer"-->
     <!--    scope="prototype">-->
