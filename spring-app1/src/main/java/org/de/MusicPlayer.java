@@ -2,6 +2,7 @@ package org.de;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -16,7 +17,10 @@ public class MusicPlayer {
     //    private ClassicalMusic classicalMusic;
 //    private RockMusic rockMusic;
     private List<Music> musicList;
+
+    @Value("${musicPlayer.name}")
     private String name;
+    @Value("${musicPlayer.volume}")
     private int volume;
 
 //    @Autowired
@@ -35,35 +39,36 @@ public class MusicPlayer {
     public MusicPlayer() {
     }
 
-//    public Music getMusic() {
+    //    public Music getMusic() {
 //        return music;
 //    }
 ////@Autowired
 //    public void fvfv(Music music) {
 //        this.music = music;
 //    }
-//    public String getName() {
-//        return name;
-//    }
-//
-//    public void setName(String name) {
-//        this.name = name;
-//    }
-//
-//    public int getVolume() {
-//        return volume;
-//    }
-//
-//    public void setVolume(int volume) {
-//        this.volume = volume;
-//    }
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getVolume() {
+        return volume;
+    }
+
+    public void setVolume(int volume) {
+        this.volume = volume;
+    }
 //
 //    public void setMusicList(List<Music> musicList) {
 //        this.musicList = musicList;
 //    }
-Random rnd = new Random();
+    Random rnd = new Random();
+
     public String playMusic(Enum e) {
-        if (e==MusicGenre.CLASSICAL){
+        if (e == MusicGenre.CLASSICAL) {
             return "Playing: " + music1.getSong().get(rnd.nextInt(3));
         }
         return "Playing: " + music2.getSong().get(rnd.nextInt(3));
