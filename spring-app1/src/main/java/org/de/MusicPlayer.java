@@ -8,7 +8,6 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 import java.util.Random;
 
-@Component
 public class MusicPlayer {
     //    @Autowired
 //    @Qualifier("classicalMusic")
@@ -29,7 +28,6 @@ public class MusicPlayer {
 //        this.rockMusic = rockMusic;
 //    }
 
-    @Autowired
     public MusicPlayer(@Qualifier("classicalMusic") Music music1,
                        @Qualifier("rockMusic") Music music2) {
         this.music1 = music1;

@@ -9,11 +9,7 @@ import javax.annotation.PreDestroy;
 import java.util.Arrays;
 import java.util.List;
 
-@Component
-@Scope("singleton")
 public class ClassicalMusic implements Music {
-    private ClassicalMusic() {
-    }
 
     public static ClassicalMusic getClassicalMusic() {
         return new ClassicalMusic();
