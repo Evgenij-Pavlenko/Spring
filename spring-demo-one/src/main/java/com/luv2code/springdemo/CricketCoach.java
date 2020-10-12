@@ -1,16 +1,18 @@
 package com.luv2code.springdemo;
 
+import java.util.Random;
+
 public class CricketCoach implements Coach {
     private String emailAddress;
     private String team;
 
-    private FortuneService fortuneService;
+    private RandomFortuneService fortuneService;
 
     public CricketCoach() {
         System.out.println("CricketCoach: inside no-arg constructor");
     }
 
-    public void setFortuneService(FortuneService fortuneService) {
+    public void setFortuneService(RandomFortuneService fortuneService) {
         System.out.println("CricketCoach: inside setter method - setFortuneService");
         this.fortuneService = fortuneService;
     }
