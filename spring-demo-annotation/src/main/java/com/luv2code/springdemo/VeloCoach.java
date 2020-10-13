@@ -9,4 +9,9 @@ public class VeloCoach implements Coach{
     public String getDailyWorkout() {
         return "Ride a bike for 1 hour";
     }
+
+    @Override
+    public String getDailyFortune() {
+        return null;
+    }
 }
