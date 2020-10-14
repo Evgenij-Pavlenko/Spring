@@ -9,7 +9,7 @@ public class TennisCoach implements Coach {
 
     //define a field - @Autowired
     @Autowired
-    @Qualifier("randomFortuneService")
+    @Qualifier("fileFortuneService")
     private FortuneService fortuneService;
 
     public TennisCoach() {
