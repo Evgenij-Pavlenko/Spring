@@ -1,6 +1,7 @@
 com.luv2code.springdemo.DatabaseFortuneService=org.springframework.stereotype.Component
 com.luv2code.springdemo.FileFortuneService=org.springframework.stereotype.Component
 com.luv2code.springdemo.HappyFortuneService=org.springframework.stereotype.Component
+com.luv2code.springdemo.MyCustomBeanProcessor=org.springframework.stereotype.Component
 com.luv2code.springdemo.RESTFortuneService=org.springframework.stereotype.Component
 com.luv2code.springdemo.RandomFortuneService=org.springframework.stereotype.Component
 com.luv2code.springdemo.TennisCoach=org.springframework.stereotype.Component
