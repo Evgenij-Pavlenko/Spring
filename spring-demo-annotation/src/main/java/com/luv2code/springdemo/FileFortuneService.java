@@ -2,6 +2,7 @@ package com.luv2code.springdemo;
 
 import org.springframework.stereotype.Component;
 
+import javax.annotation.PostConstruct;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -14,13 +15,15 @@ public class FileFortuneService implements FortuneService {
     BufferedReader br;
     List<String> data = new ArrayList<>();
 
-    {
+    @PostConstruct
+    public void readFromFile(){
         try {
             FileReader fr = new FileReader("src/main/resources/fortune.txt");
             br = new BufferedReader(fr);
             String line = br.readLine();
             while (line != null) {
                 data.add(line);
+                System.out.println();
                 line = br.readLine();
             }
         } catch (FileNotFoundException e) {
