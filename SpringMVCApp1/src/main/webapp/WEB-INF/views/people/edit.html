@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Update person</title>
+</head>
+<body class="container">
+
+<form th:method="PATCH" th:action="@{/people/{id}(id=${person.getId()})}" th:object="${person}">
+    <div class="form-inline form-group">
+        <label for="name">Enter name: </label>
+        <input type="text" class="input-group-text" th:field="*{name}" id="name">
+    </div>
+    <input type="submit" class="btn btn-primary" value="Update!">
+</form>
+</body>
+</html>
