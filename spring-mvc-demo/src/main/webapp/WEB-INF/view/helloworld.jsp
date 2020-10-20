@@ -9,8 +9,12 @@ Hello World of Spring!
 <br><br>
 
 Student name: ${param.studentName}
+<br><br>
 
-<a href="main-menu.jsp">Home</a>
+The message: ${message}
+<br><br>
+
+<a href="./">Home</a>
 
 </body>
 </html>
