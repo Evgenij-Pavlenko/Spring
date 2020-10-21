@@ -14,7 +14,7 @@ Student name: ${param.studentName}
 The message: ${message}
 <br><br>
 
-<a href="./">Home</a>
+<a href="../">Home</a>
 
 </body>
 </html>
