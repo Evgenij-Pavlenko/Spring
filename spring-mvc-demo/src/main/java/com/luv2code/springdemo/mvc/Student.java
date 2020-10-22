@@ -13,14 +13,14 @@ public class Student {
     private LinkedHashMap<String, String> countryOptions;
 
     public Student() {
-        // populate country options: used ISO country code
-        countryOptions = new LinkedHashMap<>();
-
-        countryOptions.put("BR", "Brazil");
-        countryOptions.put("FR", "France");
-        countryOptions.put("DE", "Germany");
-        countryOptions.put("IN", "India");
-        countryOptions.put("US", "United States of America");
+//        // populate country options: used ISO country code
+//        countryOptions = new LinkedHashMap<>();
+//
+//        countryOptions.put("BR", "Brazil");
+//        countryOptions.put("FR", "France");
+//        countryOptions.put("DE", "Germany");
+//        countryOptions.put("IN", "India");
+//        countryOptions.put("US", "United States of America");
     }
 
     public Student(String firstName, String lastName) {
