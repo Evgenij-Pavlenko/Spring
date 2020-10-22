@@ -1,6 +1,7 @@
 package com.luv2code.springdemo.mvc;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -15,6 +16,9 @@ public class StudentController {
     @Value("#{countryOptions}")
     private Map<String, String> countryOptions;
 
+    @Value("#{favoriteLanguage}")
+    private Map<String, String> favoriteLanguageOptions;
+
     @RequestMapping("/showForm")
     public String showForm(Model theModel) {
 
@@ -23,6 +27,7 @@ public class StudentController {
         // add student object to the model
         theModel.addAttribute("student", theStudent);
         theModel.addAttribute("theCountryOptions", countryOptions);
+        theModel.addAttribute("theFavoriteLanguage", favoriteLanguageOptions);
 
         return "student-form";
     }

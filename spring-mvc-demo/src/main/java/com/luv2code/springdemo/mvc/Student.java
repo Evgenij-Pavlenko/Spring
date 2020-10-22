@@ -16,14 +16,7 @@ public class Student {
     private LinkedHashMap<String, String> favoriteLanguageOptions;
 
     public Student() {
-        // populate favorite language options
-        favoriteLanguageOptions = new LinkedHashMap<>();
 
-        favoriteLanguageOptions.put("Java", "Java");
-        favoriteLanguageOptions.put("C#", "C#");
-        favoriteLanguageOptions.put("PHP", "PHP");
-        favoriteLanguageOptions.put("Ruby", "Ruby");
-        favoriteLanguageOptions.put("JS", "JS");
     }
 
     public Student(String firstName, String lastName) {
