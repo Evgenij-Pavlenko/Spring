@@ -19,7 +19,7 @@
 
 <!--	add folder with resource-->
 
-	<mvc:resources mapping="/resources/**" location="./resources/"></mvc:resources>
+	<mvc:resources mapping="/resources/**" location="./resources/"/>
 
 <!--	add countries properties-->
 
