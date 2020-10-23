@@ -1,3 +1,4 @@
+com.luv2code.springdemo.mvc.CustomerController=org.springframework.stereotype.Component
 com.luv2code.springdemo.mvc.HelloWorldController=org.springframework.stereotype.Component
 com.luv2code.springdemo.mvc.HomeController=org.springframework.stereotype.Component
 com.luv2code.springdemo.mvc.SillyController=org.springframework.stereotype.Component
