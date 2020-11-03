@@ -21,9 +21,9 @@ public class CreateDemo {
         try {
             // create the object
             Instructor tempInstructor =
-                    new Instructor("John", "Doe", "john@gmail.com");
+                    new Instructor("John3", "Doe", "john@gmail.com");
             InstructorDetail tempInstructorDetail =
-                    new InstructorDetail("http://my/youtube.com", "my hobby");
+                    new InstructorDetail("http://my3/youtube.com", "my hobby");
             // associate the object
 
             tempInstructor.setInstructorDetail(tempInstructorDetail);
