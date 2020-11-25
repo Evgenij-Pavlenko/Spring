@@ -11,7 +11,8 @@ public class MyDemoLogginAspect {
     // this is where we add all of our related advices for loggin
 
     // let's start with an @Before advice
-    @Before("execution(public void addAccount())")
+    @Before("execution(* addAccount())")
+//    @Before("execution(public void updateAccount())")
     public void beforeAddAccountAdvice(){
         System.out.println("====>>> Executing @Before advice on addAccount()");
     }
