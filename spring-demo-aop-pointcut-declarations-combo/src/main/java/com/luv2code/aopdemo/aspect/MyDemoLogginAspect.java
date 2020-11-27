@@ -16,13 +16,26 @@ public class MyDemoLogginAspect {
     @Pointcut("execution(* com.luv2code.aopdemo.dao.*.*(..))")
     private void forDaoPackage() {}
 
-    @Before("forDaoPackage()")
-//    @Before("execution(public void updateAccount())")
+    // create pointcut for getter methods
+    @Pointcut("execution(* com.luv2code.aopdemo.dao.*.get*(..))")
+    public void getter(){}
+
+    // create pointcut for setter methods
+    @Pointcut("execution(* com.luv2code.aopdemo.dao.*.set*(..))")
+    public void setter(){}
+
+    // create point: include package ... exclude getter/setter
+
+    @Pointcut("forDaoPackage() && !(getter() || setter())")
+    public void forDaoPackageNoGetterSetter(){}
+
+
+    @Before("forDaoPackageNoGetterSetter()")
     public void beforeAddAccountAdvice() {
-        System.out.println("====>>> Executing @Before advice on addAccount()");
+        System.out.println("\n====>>> Executing @Before advice on addAccount()");
     }
 
-    @Before("forDaoPackage()")
+    @Before("forDaoPackageNoGetterSetter()")
     public void performApiAnalytic(){
         System.out.println("====>>> Performing API analytics");
 
