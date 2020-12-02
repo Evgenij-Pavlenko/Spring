@@ -36,8 +36,10 @@ public class MyDemoLogginAspect {
         }catch (Exception ex){
             // log the exception
             myLogger.warning(ex.getMessage());
-            // give user a custom message
-            result = "Major accsident! But no worries, your private AOP helicopter is on the way!";
+//            // give user a custom message
+//            result = "Major accsident! But no worries, your private AOP helicopter is on the way!";
+            // retrow exception
+            throw ex;
         }
         // get end timestamp
         long end = System.currentTimeMillis();
