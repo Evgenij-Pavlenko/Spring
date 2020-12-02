@@ -2,6 +2,7 @@ package com.luv2code.aopdemo.aspect;
 
 import com.luv2code.aopdemo.Account;
 import org.aspectj.lang.JoinPoint;
+import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
 import org.aspectj.lang.reflect.MethodSignature;
 import org.springframework.core.annotation.Order;
@@ -14,19 +15,41 @@ import java.util.List;
 @Order(2)
 public class MyDemoLogginAspect {
 
+    @Around("execution(* com.luv2code.aopdemo.service.*.getFortune(..))")
+    public Object aroundGetFortune(ProceedingJoinPoint theProceedingJoinPoint) throws Throwable {
+
+        // print out method we are advising on
+        String method = theProceedingJoinPoint.getSignature().toShortString();
+        System.out.println("\n=====>>> Executing @Around on method: " + method);
+
+        // get begin timestamp
+        long begin = System.currentTimeMillis();
+
+        // now, let's execute the method
+        Object result = theProceedingJoinPoint.proceed();
+        // get end timestamp
+        long end = System.currentTimeMillis();
+
+        // compute duration and display it
+        long duration = end - begin;
+        System.out.println("\n=====>> Duration: " + duration / 1000 + " s");
+        return result;
+    }
+
     @After("execution(* com.luv2code.aopdemo.dao.AccountDAO.findAccounts(..))")
     public void afterFinallyFindAccountAdvice(
-            JoinPoint theJoinPoint){
+            JoinPoint theJoinPoint) {
         // print out which method we are advising on
         String method = theJoinPoint.getSignature().toShortString();
         System.out.println("\n=====>>> Executing @After (finally) on method: " + method);
     }
+
     @AfterThrowing(
             pointcut = "execution(* com.luv2code.aopdemo.dao.AccountDAO.findAccounts(..))",
             throwing = "theEx"
     )
     public void afterThrowingFindAccountAdvice(
-            JoinPoint theJoinPoint, Throwable theEx){
+            JoinPoint theJoinPoint, Throwable theEx) {
 
         // print out which method we are advising on
         String method = theJoinPoint.getSignature().toShortString();
@@ -42,7 +65,7 @@ public class MyDemoLogginAspect {
             pointcut = "execution(* com.luv2code.aopdemo.dao.AccountDAO.findAccounts(..))",
             returning = "result")
     public void afterReturningFindAccountAdvice(
-            JoinPoint theJoinPoint, List<Account> result){
+            JoinPoint theJoinPoint, List<Account> result) {
 
         // print out which method we are advising on
         String method = theJoinPoint.getSignature().toShortString();
@@ -62,7 +85,7 @@ public class MyDemoLogginAspect {
     private void convertAccounyNamesToUpperCase(List<Account> result) {
 
         // loop through accounts
-        for (Account tempAccount: result ) {
+        for (Account tempAccount : result) {
 
             // get uppercase version of name
             // update the name on the account
@@ -84,9 +107,9 @@ public class MyDemoLogginAspect {
         Object[] args = theJoinPoint.getArgs();
 
         // loop thru args
-        for (Object tempArg: args){
+        for (Object tempArg : args) {
 
-            if (tempArg instanceof Account){
+            if (tempArg instanceof Account) {
                 // downcast and print Account specific stuff
                 Account theAccount = (Account) tempArg;
                 System.out.println("account name: " + theAccount.getName());
