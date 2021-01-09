@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:c="http://www.w3.org/1999/xhtml">
 <head>
     <title>Employee Directory</title>
     <!-- Required meta tags -->
@@ -19,13 +19,16 @@
     <table class="table table-bordered table-striped">
         <thead class="thead-dark">
         <tr>
+            <th>#</th>
             <th>First Name</th>
             <th>Last Name</th>
             <th>Email</th>
         </tr>
         </thead>
         <tbody>
-        <tr th:each="tempEmployee : ${employees}">
+        <tr th:each="tempEmployee, iterator : ${employees}">
+
+            <td th:text="${iterator.index+1}"></td>
             <td th:text="${tempEmployee.firstName}"></td>
             <td th:text="${tempEmployee.lastName}"></td>
             <td th:text="${tempEmployee.email}"></td>
