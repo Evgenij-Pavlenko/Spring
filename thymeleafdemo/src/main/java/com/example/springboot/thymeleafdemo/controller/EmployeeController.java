@@ -8,8 +8,6 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import javax.annotation.PostConstruct;
-import java.util.ArrayList;
 import java.util.List;
 
 @Controller
@@ -30,6 +28,13 @@ public class EmployeeController {
         List<Employee> employees = employeeService.findAll();
         // add to the spring model
         model.addAttribute("employees", employees);
-        return "list-employees";
+        return "employees/list-employees";
+    }
+
+    @GetMapping("/showFormForAdd")
+    public String showFormForAdd(Model model){
+        Employee employee = new Employee();
+        model.addAttribute("employee", employee);
+        return "employees/employee-form";
     }
 }
