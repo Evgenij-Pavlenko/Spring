@@ -21,8 +21,11 @@
 <input type="text" th:field="*{firstName}" class="form-control mb-4 col-4" placeholder="First name">
 <input type="text" th:field="*{lastName}" class="form-control mb-4 col-4" placeholder="Last name">
 <input type="text" th:field="*{email}" class="form-control mb-4 col-4" placeholder="Email">
-        <button type="submit" class="btn btn-info col-2">Save</button>
+        <button type="submit" class="btn btn-info col-2 mb-3">Save</button>
     </form>
+    <a th:href="@{/employees/list}" class="btn btn-primary btn-sm mb-3">
+        Back to Employees
+    </a>
 </div>
 </body>
 </html>
