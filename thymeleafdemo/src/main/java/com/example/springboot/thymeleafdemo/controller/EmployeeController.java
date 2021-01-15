@@ -58,5 +58,14 @@ model.addAttribute("employee", employee);
         return "redirect:/employees/list";
     }
 
+    @GetMapping("/delete")
+    public String deleteEmployee(@RequestParam("employeeId") int id){
+
+        // delete the employee
+        employeeService.deleteById(id);
+        // use a redirect to /employees/list
+        return "redirect:/employees/list";
+    }
+
 
 }
