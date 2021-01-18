@@ -1,37 +1,40 @@
 package com.example.springboot.thymeleafdemo.config;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
-import org.springframework.security.config.annotation.web.builders.WebSecurity;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.core.userdetails.User;
+import org.springframework.security.core.userdetails.User.UserBuilder;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.crypto.scrypt.SCryptPasswordEncoder;
 
+@Configuration
+@ComponentScan("com.example.springboot.thymeleafdemo")
+@EnableWebSecurity
 public class DemoSecurityConfig extends WebSecurityConfigurerAdapter {
+
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-        // add our users for in memory authenfication
 
-        //  is deprecated
-//        User.UserBuilder users = User.withDefaultPasswordEncoder();
+        // add our users for in memory authentication
 
-        /**
-         * In the application, we want to display content based on user role.
-         *
-         * - Employee role: users in this role will only be allowed to list employees.
-         * - Manager role: users in this role will be allowed to list, add and update employees.
-         * - Admin role: users in this role will be allowed to list, add, update and delete employees.
-         */
+//        UserBuilder users = User.withDefaultPasswordEncoder();
+//
+//        auth.inMemoryAuthentication()
+//                .withUser(users.username("John").password("123").roles("EMPLOYEE"))
+//                .withUser(users.username("Max").password("123").roles("EMPLOYEE", "MANAGER"))
+//                .withUser(users.username("Samara").password("123").roles("EMPLOYEE", "ADMIN"));
         auth.inMemoryAuthentication()
-                .passwordEncoder(passwordEncoder())
-                .withUser("user").password("123").roles("USER")
+                .withUser("John").password("{noop}123").roles("EMPLOYEE")
                 .and()
-                .withUser("Max").password("123").roles("EMPLOYEE", "MANAGER")
+                .withUser("Max").password("{noop}123").roles("EMPLOYEE", "MANAGER")
                 .and()
-                .withUser("Samara").password("123").roles("EMPLOYEE", "ADMIN");
-
+                .withUser("Samara").password("{noop}123").roles("EMPLOYEE", "ADMIN");
     }
 
     @Override
@@ -55,9 +58,9 @@ public class DemoSecurityConfig extends WebSecurityConfigurerAdapter {
 
     }
 
-    // is new with @Autowired
-    @Autowired
-    private PasswordEncoder passwordEncoder() {
-        return new BCryptPasswordEncoder();
-    }
+//    @Bean
+//    public PasswordEncoder passwordEncoder() {
+//        return new BCryptPasswordEncoder();
+//    }
+
 }
